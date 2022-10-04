@@ -64,50 +64,50 @@
             <h2 class="visually-hidden">Форма фильтрации списка гостиниц</h2>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="checkbox" name="wi-fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type-house" value="hotel" checked>
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type-house" value="motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="control-input" type="radio" name="type-house" value="apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type-house" value="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type-house" value="motel">
+                    Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                  <input class="control-input" type="radio" name="type-house" value="apartments">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
@@ -127,15 +127,18 @@
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a class="button button-cards button-checked">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button button-slider" href="#">
-          <span class="visually-hidden">Показать слайдер</span>
-        </a>
-        <a class="button button-list" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+
+        <div class="hotels-display">
+          <a class="button button-cards button-checked">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button button-slider" href="#">
+            <span class="visually-hidden">Показать слайдер</span>
+          </a>
+          <a class="button button-list" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
 
         <ul class="hotels-list">
           <li class="hotels-card">
