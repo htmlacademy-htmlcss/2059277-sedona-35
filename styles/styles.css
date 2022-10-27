@@ -136,9 +136,14 @@ body {
     text-transform: uppercase;
 }
 
-.advantages-image {
+.advantages-image-sedona {
     display: block;
     float: right;
+}
+
+.advantages-image-bridge {
+    display: block;
+    float: left;
 }
 
 .item-blue {
