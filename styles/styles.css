@@ -127,9 +127,16 @@ body {
 
 .advantages-item {
     width: 400px;
+    min-height: 384px;
+}
+
+.advantages-container .advantages-item {
+    width: 1200px;
 }
 
 .advantages-title {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -147,7 +154,6 @@ body {
 }
 
 .item-blue {
-    width: 1200px;
     color: #ffffff;
     background-color: #82B3D3;
 }
