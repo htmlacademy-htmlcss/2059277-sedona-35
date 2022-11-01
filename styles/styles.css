@@ -41,6 +41,12 @@ body {
     overflow: hidden;
 }
 
+.clear-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .button {
     padding: 8px 50px;
     font-family: inherit;
@@ -68,6 +74,7 @@ body {
 }
 
 .page-header-logo {
+    display: block;
     width: 140px;
     margin-right: 70px;
 }
@@ -79,14 +86,9 @@ body {
 
 .nav-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     width: 450px;
-}
-
-.clear-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .nav-user {
@@ -100,8 +102,6 @@ body {
 }
 
 .nav-user .button {
-    display: block;
-    margin-top: 14px;
     padding: 8px 34px;
 }
 
@@ -120,6 +120,8 @@ body {
 
 .welcome {
     margin-bottom: 69px;
+    padding-top: 51px;
+    padding-bottom: 82px;
     color: #000000;
     background-color: #ffffff;
     background-image: url("../images/main-background-bottom.svg"), url("../images/main-background.jpg");
@@ -131,8 +133,6 @@ body {
 .welcome-img {
     display: block;
     margin: 0 auto;
-    padding-top: 51px;
-    padding-bottom: 82px;
 }
 
 .advantages {
@@ -179,11 +179,16 @@ body {
 
 .advantages-container-inner {
     flex-direction: column;
+    padding: 100px 85px;
+}
+
+.advantages-container-inner-icon {
+    padding: 80px 85px;
 }
 
 .advantages-title {
     margin: 0;
-    padding: 92px 112px 62px;
+    margin-bottom: 62px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -191,7 +196,7 @@ body {
 }
 
 .advantages-description {
-    padding: 0 80px;
+    margin: 0;
 }
 
 .advantages-item-blue {
@@ -233,8 +238,7 @@ body {
 
 .subscription {
     margin-bottom: 40px;
-    padding-top: 96px;
-    padding-bottom: 104px;
+    padding: 96px 104px;
     text-align: center;
 }
 
@@ -258,7 +262,6 @@ body {
 .subscription-description {
     margin-top: 0;
     margin-bottom: 54px;
-    padding: 0 104px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -350,7 +353,7 @@ body {
 .breadcrumbs {
     display: flex;
     margin-bottom: 40px;
-  }
+}
 
 .breadcrumbs-item {
     font-size: 16px;
@@ -397,11 +400,14 @@ body {
     background-color: transparent;
 }
 
+.catalog-hotels {
+    padding: 0 70px;
+}
+
 .search-container {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    padding: 0 70px;
     color: #000000;
     background-color: #ffffff;
 }
@@ -449,11 +455,11 @@ body {
 
 .hotels-list {
     margin-bottom: 80px;
-    padding: 0 70px;
 }
 
 .hotels-card {
     width: 340px;
+    padding: 20px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -493,7 +499,6 @@ body {
 .pagination {
     display: flex;
     margin-bottom: 60px;
-    padding: 0 70px;
     background-color: #ffffff;
 }
 
