@@ -75,13 +75,15 @@ body {
 
 .page-header-logo {
     display: block;
+    position: absolute;
     width: 140px;
-    margin-right: 70px;
+    margin-left: 70px;
 }
 
 .nav {
     display: flex;
     width: 1060px;
+    margin-left: 238px;
 }
 
 .nav-list {
