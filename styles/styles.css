@@ -559,7 +559,6 @@ body {
     align-items: center;
     margin-bottom: 40px;
     color: #ffffff;
-    box-sizing: border-box;
 }
 
 .breadcrumbs-item {
@@ -570,11 +569,21 @@ body {
     font-weight: 400;
 }
 
+.breadcrumbs-icon-home {
+    display: block;
+    width: 13px;
+    height: 15px;
+    padding: 3px 0;
+    background-image: url("../images/icons/icon-home.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 .breadcrumbs-item::after {
+    display: block;
     position: absolute;
     top: 0;
-    right: -20px;
-    left: auto;
+    right: -18px;
     width: 8px;
     height: 21px;
     background-image: url("../images/arrow-breadcrumbs.svg");
@@ -605,10 +614,6 @@ body {
 
 .breadcrumbs-link:active {
     color: rgba(255, 255, 255, 0.3);
-}
-
-.breadcrumbs-icon-home  {
-    fill: #ffffff;
 }
 
 .catalog-filter-form {
