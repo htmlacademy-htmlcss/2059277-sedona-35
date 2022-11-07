@@ -68,15 +68,18 @@ body {
 
 .button:hover {
     background-color: #615048;
+    outline: none;
 }
 
 .button:focus {
     background-color: #615048;
+    outline: none;
 }
 
 .button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #756157;
+    outline: none;
 }
 
 .button:disabled {
@@ -128,6 +131,14 @@ body {
 .nav-user .nav-link {
     min-width: 18px;
     min-height: 18px;
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+.nav-link:active {
+    outline: none;
 }
 
 .nav-search {
@@ -385,6 +396,10 @@ body {
     color: #333333;
 }
 
+.subscription-main .subscription-description {
+    color: inherit;
+}
+
 .subscription-email {
     flex-grow: 1;
     margin: 0;
@@ -419,24 +434,14 @@ body {
 
 .field:focus {
     background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
 }
 
 .field:active {
     color: #000000;
     background-color: #F2F2F2;
-    outline: 2px solid #000000;
+    border: 2px solid #000000;
 }
-
-/* .field:disabled,
-.field:disabled:hover {
-    color: rgba(0, 0, 0, 0.3);;
-    background-color: #ffffff;
-}
-
-.field:focus:invalid {
-    border-color: #FF5757;
-} */
 
 .field::placeholder {
     color: #000000;
@@ -519,6 +524,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 48px 40px;
+    outline: none;
 }
 
 .social-icon {
@@ -536,10 +542,12 @@ body {
 
 .social-icon:focus {
     fill: #68A2CA;
+    outline: none;
 }
 
 .social-icon:active {
     fill: rgba(104, 162, 202, 0.3);
+    outline: none;
 }
 
 .footer-contacts {
@@ -554,6 +562,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
+    outline: none;
 }
 
 .contacts-phone:hover {
@@ -571,6 +580,10 @@ body {
 .developer {
     max-width: 150px;
     margin-left: auto;
+}
+
+.logo-academy {
+    outline: none;
 }
 
 .academy-icon {
@@ -655,6 +668,7 @@ body {
 .breadcrumbs-link {
     color: #ffffff;
     text-decoration: none;
+    outline: none;
 }
 
 .breadcrumbs-link:hover {
@@ -704,6 +718,162 @@ body {
     font-weight: 400;
 }
 
+.catalog-filter-item:hover {
+    opacity: 0.6;
+}
+
+.catalog-filter-item:focus {
+    opacity: 1;
+}
+
+.catalog-filter-item:active {
+    opacity: 0.3;
+}
+
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    padding-bottom: 16px;
+}
+
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.control:hover .control-mark {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:focus .control-mark {
+    background-color: #FFFFFF;
+    outline: 3px solid #83B3D3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:active .control-mark {
+    background-color: #FFFFFF;
+    outline: 2px solid #83B3D3;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.control-input:disabled + .control-mark {
+    border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 13px;
+    height: 10px;
+    background-color: #ffffff;
+    background-image: url("../images/chek-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";
+}
+
+.control-label {
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    width: 290px;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.catalog-filter-label {
+    display: flex;
+    position: relative;
+    margin-right: 2px;
+}
+
+.range-input {
+    width: 123px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    font: inherit;
+    font-weight: 700;
+    text-align: start;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    appearance: textfield;
+}
+
+.input-wrapper::before {
+    position: absolute;
+    top: 12px;
+    left: 106px;
+    width: 17px;
+    height: 24px;
+    content: "от";
+    color: #000000;
+    opacity: 0.3;
+}
+
+.input-wrapper-right::before {
+    position: absolute;
+    top: 12px;
+    left: 106px;
+    width: 17px;
+    height: 24px;
+    content: "до";
+    color: #000000;
+    opacity: 0.3;
+}
+
+.range-input:hover {
+    background-color: #E6E6E6;
+}
+
+.range-input:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+    background-color: #F2F2F2;
+    outline: 2px solid #000000;
+}
+
+.range-input-right {
+    border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
 .range-scale {
     position: relative;
     height: 4px;
@@ -749,118 +919,13 @@ body {
     right: 0;
 }
 
-.range-wrapper-inputs {
-    display: flex;
-    width: 290px;
-    justify-content: center;
-    margin-bottom: 36px;
-}
-
-.catalog-filter-label {
-    display: flex;
-    margin-right: 2px;
-}
-
-.range-input {
-    width: 143px;
-    padding: 12px 0;
-    font: inherit;
-    text-align: center;
-    background-color: #F2F2F2;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    appearance: textfield;
-}
-
-.range-input-right {
-    border-radius: 0 4px 4px 0;
-}
-
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-    appearance: none;
-    margin: 0;
-}
-
-.control {
-    position: relative;
-    display: block;
-    padding-left: 36px;
-    padding-bottom: 16px;
-}
-
-.control-mark {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-}
-
-.control:hover .control-mark {
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.control:focus .control-mark {
-    background-color: #FFFFFF;
-    outline: 3px solid #83B3D3;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.control:active .control-mark {
-    background-color: #FFFFFF;
-    opacity: 2px solid #83B3D3;
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
-}
-
-.control-input:disabled + .control-mark {
-    border-color: #242424;
-}
-
-
-.control-input[type="checkbox"]:checked + .control-mark::after {
-    position: absolute;
-    top: 5px;
-    left: 4px;
-    width: 13px;
-    height: 10px;
-    background-color: #ffffff;
-    background-image: url("../images/chek-mark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    content: "";
-}
-
-.control-input[type="radio"] + .control-mark {
-    border-radius: 50%;
-}
-
-.control-input[type="radio"]:checked + .control-mark::before {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #242424;
-    border-radius: 50%;
-    content: "";
-}
-
-.control-label {
-    line-height: 23px;
-    font-weight: 400;
-}
-
 .button-conteiner {
     display: flex;
     flex-direction: column;
 }
 
 .catalog-filter-form .button {
+    margin-top: 56px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -873,7 +938,10 @@ body {
 }
 
 .catalog-filter-form .button-reset {
+    margin-top: 32px;
+    padding: 8px 54px;
     background-color: transparent;
+    outline: none;
 }
 
 .catalog-filter-form .button-reset:hover {
@@ -882,7 +950,6 @@ body {
 }
 
 .catalog-filter-form .button-reset:focus {
-    padding: 8px 47px;
     background-color: transparent;
     border: 3px solid #83B3D3;
 }
@@ -890,6 +957,7 @@ body {
 .catalog-filter-form .button-reset:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: transparent;
+    outline: none;
 }
 
 .catalog-filter-form .button-reset:disabled {
