@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -124,7 +124,7 @@
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-description">Укажите предполагаемые даты поездки,<br>
              и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscription subscription-main">
@@ -185,6 +185,38 @@
           </a>
         </section>
       </footer>
+    </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="search-form-label search-form-label-arrival" for="date-arrival">Дата заезда:</label>
+            <input class="search-form-field search-form-field-arrival" type="text" id="date-arrival" name="date-arrival" placeholder="Укажите дату">
+          </p>
+          <p class="field-group">
+            <label class="search-form-label search-form-label-departure" for="date-departure">Дата выезда:</label>
+            <input class="search-form-field search-form-field-departure" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату">
+          </p>
+          <div class="field-group-number">
+            <p class="field-group">
+              <label class="search-form-label search-form-label-adults" for="adults">Взрослые:</label>
+              <input class="search-form-field search-form-field-adults" type="number" placeholder="2" id="adults" name="adults">
+            </p>
+            <p class="field-group">
+              <label class="search-form-label search-form-label-kids" for="kids">Дети:</label>
+              <input class="search-form-field search-form-field-kids" type="number" placeholder="2" id="kids" name="kids">
+            </p>
+          </div>
+            <a class="button search-form-button" href="catalog.html">Найти</a>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
