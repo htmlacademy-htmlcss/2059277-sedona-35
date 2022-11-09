@@ -71,7 +71,7 @@ body {
     outline: none;
 }
 
-.button:focus {
+.button:focus-visible {
     background-color: #615048;
     outline: none;
 }
@@ -127,20 +127,12 @@ body {
 .nav-user {
     max-width: 320px;
     margin-left: auto;
-    margin-right: 19px;
+    margin-right: 21px;
 }
 
 .nav-user .nav-link {
     min-width: 18px;
     min-height: 18px;
-}
-
-.nav-link:focus {
-    outline: none;
-}
-
-.nav-link:active {
-    outline: none;
 }
 
 .nav-search {
@@ -152,7 +144,8 @@ body {
 
 .nav-favorites {
     position: relative;
-    margin-right: 20px;
+    margin-left: -7px;
+    margin-right: 17px;
     background-image: url("../images/icons/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -260,27 +253,6 @@ body {
     display: flex;
 }
 
-.advantages-item-house {
-    background-image: url("../images/icons/advantage-icon-house.svg");
-    background-repeat: no-repeat;
-    background-position: center 80px;
-    background-size: 75px 72px;
-}
-
-.advantages-item-meal {
-    background-image: url("../images/icons/advantage-icon-meal.svg");
-    background-repeat: no-repeat;
-    background-position: center 80px;
-    background-size: 75px 72px;
-}
-
-.advantages-item-souvenirs {
-    background-image: url("../images/icons/advantage-icon-souvenirs.svg");
-    background-repeat: no-repeat;
-    background-position: center 80px;
-    background-size: 75px 72px;
-}
-
 .advantages-image-sedona {
     order: 1;
 }
@@ -290,13 +262,10 @@ body {
     padding: 100px 85px;
 }
 
-.advantages-container-inner-icon {
-    padding: 182px 85px 80px;
-}
-
 .advantages-title {
     position: relative;
     margin: 0;
+    margin-top: 4px;
     margin-bottom: 62px;
     padding: 0 27px;
     font-size: 24px;
@@ -305,11 +274,17 @@ body {
     text-transform: uppercase;
 }
 
+.advantages-item-blue .advantages-title {
+    margin-top: -7px;
+    margin-bottom: 54px;
+    margin-left: -5px;
+}
+
 .advantages-item-blue .advantages-title::before {
     position: absolute;
-    right: 85px;
+    right: 87px;
     bottom: -30px;
-    left: 85px;
+    left: 87px;
     height: 2px;
     background-color:rgba(255, 255, 255, 0.3);
     content: "";
@@ -330,6 +305,10 @@ body {
     margin: 0;
 }
 
+.advantages-item-blue .advantages-description {
+    padding-top: 7px;
+}
+
 .advantages-item-blue {
     width: 100%;
     color: #ffffff;
@@ -342,6 +321,45 @@ body {
 
 .advantages-item-pale-blue {
     background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-container-inner-icon {
+    padding: 179px 0 81px;
+}
+
+.advantages-container-inner-icon .advantages-description {
+    margin-top: -32px;
+
+}
+
+.advantages-description-house {
+    padding: 0 110px;
+}
+
+.advantages-description-meal,
+.advantages-description-souvenirs {
+    padding: 0 80px;
+}
+
+.advantages-item-house {
+    background-image: url("../images/icons/advantage-icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    background-size: 75px 72px;
+}
+
+.advantages-item-meal {
+    background-image: url("../images/icons/advantage-icon-meal.svg");
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    background-size: 75px 72px;
+}
+
+.advantages-item-souvenirs {
+    background-image: url("../images/icons/advantage-icon-souvenirs.svg");
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    background-size: 75px 74px;
 }
 
 .search {
@@ -360,7 +378,7 @@ body {
 
 .search-description {
     margin-top: 0;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -372,8 +390,8 @@ body {
 }
 
 .subscription {
-    margin-bottom: 40px;
-    padding: 96px 104px;
+    margin-bottom: 44px;
+    padding: 96px 104px 104px;
     text-align: center;
 }
 
@@ -415,6 +433,7 @@ body {
 .subscription-form {
     display: flex;
     justify-content: center;
+
 }
 
 .field {
@@ -431,7 +450,7 @@ body {
 }
 
 .subscription-form .field {
-    width: 452px;
+    width: 412px;
     outline: none;
 }
 
@@ -439,15 +458,10 @@ body {
     background-color: #E6E6E6;
 }
 
-.field:focus {
+.field:focus-visible {
+    padding: 11px 17px;
     background-color: #E6E6E6;
     border: 3px solid #83B3D3;
-}
-
-.field:active {
-    color: #000000;
-    background-color: #F2F2F2;
-    border: 2px solid #000000;
 }
 
 .field::placeholder {
@@ -537,7 +551,7 @@ body {
 .social-icon {
     position: absolute;
     top: 13px;
-    right: 12px;
+    right: 13px;
     bottom: 0;
     left: 12px;
     fill: #83B3D3;
@@ -549,12 +563,10 @@ body {
 
 .social-icon:focus {
     fill: #68A2CA;
-    outline: none;
 }
 
 .social-icon:active {
     fill: rgba(104, 162, 202, 0.3);
-    outline: none;
 }
 
 .footer-contacts {
@@ -587,6 +599,7 @@ body {
 .developer {
     max-width: 150px;
     margin-left: auto;
+    margin-top: 3px;
 }
 
 .logo-academy {
@@ -616,7 +629,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-container-close {
@@ -636,15 +649,32 @@ body {
     position: absolute;
     padding: 0;
     top: 64px;
-    right: 52px;
+    right: 53px;
     width: 52px;
     height: 52px;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     border: none;
+    border-radius: 50%;
     background-image: url("../images/close.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    outline: none;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+    background-color: #E6E6E6;
+    border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    border: none;
+    opacity: 0.3;
 }
 
 .modal-title {
@@ -677,13 +707,20 @@ body {
 }
 
 .search-form-label-arrival {
-    margin-right: 18px;
+    margin-right: 20px;
+}
+
+.search-form-label-departure {
+    margin-right: 14px;
 }
 
 .search-form-label-adults {
-    margin-right: 18px;
+    margin-right: 45px;
 }
 
+.search-form-label-kids {
+    margin-right: 10px;
+}
 
 .search-form-field {
     width: 420px;
@@ -692,37 +729,256 @@ body {
     padding-left: 20px;
     font: inherit;
     font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     text-align: start;
+    color: #000000;
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
+    outline: none;
 }
 
-.search-form-field-adults,
-.search-form-field-kids {
-    width: 100px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 10px;
-    font: inherit;
-    font-weight: 700;
-    text-align: center;
+.search-form-field:hover {
+    background-color: #E6E6E6;
+}
+
+.search-form-field:focus-visible {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.search-form-field:active {
+    background-color: #F2F2F2;
+    outline: 2px solid #000000;
+}
+
+.search-form-field:placeholder-shown {
+    background-color: #F2F2F2;
     color: #000000;
-    appearance: textfield;
+}
+
+.field-group {
+    position: relative;
+    text-align: center;
+}
+
+.field-group-calendar::before {
+    position: absolute;
+    top: 13px;
+    right: 23px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/calendar.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    content: "";
+}
+
+.search-info-date {
+    position: absolute;
+    top: 51px;
+    left: 156px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.search-error-date {
+    color: #FF5757;
 }
 
 .field-group-number {
     display: flex;
-    width: 577px;
     justify-content: space-between;
+    margin: 0;
 }
+
+.search-form-field-adults,
+.search-form-field-kids {
+    box-sizing: border-box;
+    width: 31px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font: inherit;
+    font-weight: 700;
+    color: #000000;
+}
+
+.search-form-field-adults:hover,
+.search-form-field-kids:hover {
+    background-color: #E6E6E6;
+}
+
+.search-form-field-adults:focus-visible,
+.search-form-field-adults:active,
+.search-form-field-kids:focus-visible,
+.search-form-field-kids:active {
+    outline: none;
+}
+
+.adults-count,
+.kids-count {
+    display: flex;
+    align-items: center;
+}
+
+.kids-count {
+    margin-right: 5px;
+}
+
+.button-count {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 48px;
+    margin: 0;
+    padding: 14px 10px;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-minus {
+    position: relative;
+    border-radius: 4px 0 0 4px;
+    background-image: url("../images/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+    opacity: 0.3;
+}
+
+.button-minus-right {
+    margin-left: 46px;
+}
+
+.button-plus {
+    position: relative;
+    border-radius: 0 4px 4px 0;
+    background-image: url("../images/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+    opacity: 0.3;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+    opacity: 1;
+}
+
+.button-minus:focus-visible,
+.button-plus:focus-visible {
+    opacity: 1;
+    border: 3px solid #82B3D3;
+    border-radius: 4px;
+}
+
+.button-minus:active,
+.button-plus:active {
+    opacity: 0.3;
+}
+
+.tooltip {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-top: -1px;
+    margin-left: 3px;
+}
+
+.tooltip-toggle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.tooltip-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border-radius: 50%;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+    background-color: #83B3D3;
+}
+
+.form-label-icon {
+    position: relative;
+    padding-right: 16px;
+}
+
+.tooltip-text {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    left: 13px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 225px;
+    padding: 21px 14px 25px 21px;
+    font-size: 15px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    text-align: start;
+    color: #ffffff;
+    background-color: #333333;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.tooltip-toggle:hover .tooltip-text,
+.tooltip-toggle:focus .tooltip-text {
+    display: block;
+}
+
+.tooltip-text::before {
+    position:absolute;
+    bottom: 146px;
+    left: 0;
+    right: 6px;
+    width: 19px;
+    height: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/tooltip-arrow.svg");
+    content:'';
+  }
 
 .search-form-button {
     width: 577px;
     padding: 18px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
     color: #ffffff;
     background-color: #83B3D3;
     border-radius: 10px;
+    outline: none;
+}
+
+.search-form-button:hover {
+    background-color: #68A2CA;
+}
+
+.search-form-button:focus-visible {
+    background-color: #68A2CA;
+}
+
+.search-form-button:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .inner-header {
