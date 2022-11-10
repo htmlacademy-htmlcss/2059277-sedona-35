@@ -19,10 +19,10 @@ html {
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -105,8 +105,8 @@ body {
 }
 
 .page-header-logo {
-    display: block;
     position: absolute;
+    display: block;
     width: 140px;
     margin-left: 70px;
 }
@@ -119,9 +119,9 @@ body {
 
 .nav-list {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     width: 450px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-user {
@@ -154,17 +154,17 @@ body {
 
 .nav-favorites-number {
     position: absolute;
+    top: 11px;
+    left: 24px;
     width: 11px;
     height: 10px;
-    left: 24px;
-    top: 11px;
     padding: 4px;
-    background-color: #7DB54F;
-    border-radius: 50% 50%;
     font-weight: 400;
     font-size: 10px;
     line-height: 10px;
     color: #FFFFFF;
+    background-color: #7DB54F;
+    border-radius: 50% 50%;
 }
 
 .nav-user .button {
@@ -249,7 +249,7 @@ body {
     min-height: 384px;
 }
 
-.advantages-container .advantages-item {
+.advantages-container {
     display: flex;
 }
 
@@ -433,7 +433,6 @@ body {
 .subscription-form {
     display: flex;
     justify-content: center;
-
 }
 
 .field {
@@ -532,15 +531,15 @@ body {
 }
 
 .footer-social-item {
-    margin: 0;
-    padding: 0;
     width: 48px;
     height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-social-link {
-    display: block;
     position: relative;
+    display: block;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
@@ -598,8 +597,8 @@ body {
 
 .developer {
     max-width: 150px;
-    margin-left: auto;
     margin-top: 3px;
+    margin-left: auto;
 }
 
 .logo-academy {
@@ -647,11 +646,11 @@ body {
 
 .modal-close-button {
     position: absolute;
-    padding: 0;
     top: 64px;
     right: 53px;
     width: 52px;
     height: 52px;
+    padding: 0;
     background-color: #F2F2F2;
     border: none;
     border-radius: 50%;
@@ -790,13 +789,12 @@ body {
 
 .field-group-number {
     display: flex;
-    justify-content: space-between;
     margin: 0;
+    justify-content: space-between;
 }
 
 .search-form-field-adults,
 .search-form-field-kids {
-    box-sizing: border-box;
     width: 31px;
     height: 48px;
     margin: 0;
@@ -805,6 +803,7 @@ body {
     font: inherit;
     font-weight: 700;
     color: #000000;
+    box-sizing: border-box;
 }
 
 .search-form-field-adults:hover,
@@ -831,7 +830,6 @@ body {
 
 .button-count {
     display: inline-block;
-    box-sizing: border-box;
     width: 40px;
     height: 48px;
     margin: 0;
@@ -840,6 +838,7 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .button-minus {
@@ -873,9 +872,9 @@ body {
 
 .button-minus:focus-visible,
 .button-plus:focus-visible {
-    opacity: 1;
     border: 3px solid #82B3D3;
     border-radius: 4px;
+    opacity: 1;
 }
 
 .button-minus:active,
@@ -919,24 +918,24 @@ body {
 }
 
 .tooltip-text {
-    display: none;
     position: absolute;
     top: 40px;
     left: 13px;
     transform: translateX(-50%);
     z-index: 1;
+    display: none;
     width: 225px;
     padding: 21px 14px 25px 21px;
     font-size: 15px;
     line-height: 20px;
     font-style: normal;
     font-weight: 400;
-    text-transform: none;
     text-align: start;
     color: #ffffff;
+    border-radius: 10px;
+    text-transform: none;
     background-color: #333333;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
 }
 
 .tooltip-toggle:hover .tooltip-text,
@@ -946,15 +945,15 @@ body {
 
 .tooltip-text::before {
     position:absolute;
+    right: 6px;
     bottom: 146px;
     left: 0;
-    right: 6px;
     width: 19px;
     height: 9px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../images/tooltip-arrow.svg");
-    content:'';
+    content:"";
   }
 
 .search-form-button {
@@ -1001,8 +1000,8 @@ body {
 
 .breadcrumbs {
     display: flex;
-    align-items: center;
     margin-bottom: 40px;
+    align-items: center;
     color: #ffffff;
 }
 
@@ -1025,10 +1024,10 @@ body {
 }
 
 .breadcrumbs-item::after {
-    display: block;
     position: absolute;
     top: 0;
     right: -18px;
+    display: block;
     width: 8px;
     height: 21px;
     background-image: url("../images/arrow-breadcrumbs.svg");
@@ -1085,8 +1084,8 @@ body {
 
 .catalog-filter-title {
     margin: 0;
-    margin-left: -3px;
     margin-bottom: 32px;
+    margin-left: -3px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -1190,8 +1189,8 @@ body {
 }
 
 .catalog-filter-label {
-    display: flex;
     position: relative;
+    display: flex;
     margin-right: 2px;
 }
 
@@ -1215,9 +1214,9 @@ body {
     left: 105px;
     width: 17px;
     height: 24px;
-    content: "от";
     color: #000000;
     opacity: 0.3;
+    content: "от";
 }
 
 .input-wrapper-right::before {
@@ -1226,9 +1225,9 @@ body {
     left: 103px;
     width: 17px;
     height: 24px;
-    content: "до";
     color: #000000;
     opacity: 0.3;
+    content: "до";
 }
 
 .range-input:hover {
@@ -1418,10 +1417,10 @@ body {
 }
 
 .hotels-display .button {
-    margin-right: 8px;
-    padding: 0;
     width: 48px;
     height: 48px;
+    margin-right: 8px;
+    padding: 0;
     color: #000000;
     background-color: #ffffff;
     border: 2px solid #E5E5E5;
@@ -1607,18 +1606,18 @@ body {
 
 .pagination-link {
     display: block;
-    box-sizing: border-box;
     width: 60px;
     height: 60px;
     padding: 12px 13px;
-    color: #ffffff;
-    background-color: #82B3D3;
-    text-decoration: none;
-    border-radius: 4px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #82B3D3;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .pagination-link:hover {
