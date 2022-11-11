@@ -1385,7 +1385,7 @@ img {
 
 .search-result {
     margin: 0;
-    margin-right: 202px;
+    margin-right: 195px;
     padding: 7px 0;
     font-size: 30px;
     line-height: 36px;
@@ -1507,7 +1507,7 @@ img {
 .hotels-card {
     display: grid;
     grid-template-rows: 212px min-content min-content auto min-content;
-    grid-template-columns: 142px 142px;
+    grid-template-columns: 140px 140px;
     column-gap: 16px;
     row-gap: 15px;
     padding: 21px 19px;
@@ -1521,11 +1521,11 @@ img {
 }
 
 .hotels-card .button {
-    padding: 8px 20px;
+    padding: 8px 18px;
 }
 
 .hotels-card .button-current {
-    padding: 8px 18px;
+    padding: 8px 16px;
     background-color: #7DB54F;
 }
 
@@ -1612,7 +1612,7 @@ img {
 }
 
 .hotels-card-rating {
-    padding: 9px 22px;
+    padding: 9px 20px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
