@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="page-header-logo">
+        <a class="page-header-logo" href="index.html">
           <img src="images/header-logo.svg" width="140" height="70" alt="Логотип сайта «Седона».">
         </a>
 
@@ -22,7 +22,7 @@
               <a class="nav-link" href="#">О Седоне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Гостиницы</a>
+              <a class="nav-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="button" href="catalog.html">Хочу сюда!</a>
+              <a class="button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -188,17 +188,17 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close">  <!-- modal-container-close -->
+    <div class="modal-container modal-container-close">  <!-- modal-container-close Класс для закрытия модального окна-->
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group field-group-calendar">
-            <label class="search-form-label search-form-label-arrival" for="date-arrival">Дата заезда:</label>
-            <input class="search-form-field search-form-field-arrival" type="text" id="date-arrival" placeholder="Укажите дату" value="27 апреля 2020" name="date-arrival">
+            <label class="search-form-label" for="date-arrival">Дата заезда:</label>
+            <input class="search-form-field" type="text" id="date-arrival" placeholder="Укажите дату" value="27 апреля 2020" name="date-arrival">
             <span class="search-info-date search-error-date">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="field-group field-group-calendar">
@@ -228,7 +228,7 @@
                       <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4zm2 12H9V7h2v9z"/>
                       </svg>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </button>
                   </span>
                 </span>
