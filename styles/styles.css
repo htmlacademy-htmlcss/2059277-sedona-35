@@ -105,6 +105,7 @@ img {
 }
 
 .page-header {
+    position: relative;
     display: flex;
     color: #000000;
     background-color: #ffffff;
@@ -112,9 +113,9 @@ img {
 
 .page-header-logo {
     position: absolute;
-    display: block;
+    top: 0;
+    left: 70px;
     width: 140px;
-    margin-left: 70px;
 }
 
 .nav {
@@ -545,8 +546,6 @@ img {
 .footer-social-item {
     width: 48px;
     height: 40px;
-    margin: 0;
-    padding: 0;
 }
 
 .footer-social-link {
@@ -725,8 +724,8 @@ img {
 
 .field-group-calendar::before {
     position: absolute;
-    top: 13px;
-    right: 23px;
+    top: 14px;
+    right: 22px;
     width: 20px;
     height: 20px;
     background-image: url("../images/calendar.svg");
@@ -818,6 +817,7 @@ img {
     font: inherit;
     font-weight: 700;
     color: #000000;
+    border-radius: 0;
     box-sizing: border-box;
 }
 
@@ -860,11 +860,14 @@ img {
     position: relative;
     border-radius: 4px 0 0 4px;
     background-color: #F2F2F2;
-    background-image: url("../images/minus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 14px 14px;
-    opacity: 0.3;
+}
+
+.button-minus-icon {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    left: 15px;
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .button-minus-right {
@@ -875,49 +878,46 @@ img {
     position: relative;
     border-radius: 0 4px 4px 0;
     background-color: #F2F2F2;
-    background-image: url("../images/plus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 14px 14px;
-    opacity: 0.3;
 }
 
-.button-minus:hover,
-.button-plus:hover {
-    opacity: 1;
+.button-plus-icon {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    fill: rgba(117, 97, 87, 0.3);
 }
 
-.button-minus:focus-visible,
-.button-plus:focus-visible {
+.button-minus:hover .button-minus-icon,
+.button-plus:hover .button-plus-icon {
+    fill: #000000;
+}
+
+.button-minus:focus-visible .button-minus-icon,
+.button-plus:focus-visible .button-minus-icon {
     border: 3px solid #82B3D3;
     border-radius: 4px;
-    opacity: 1;
+    fill: #000000;
 }
 
 .button-minus:active,
 .button-plus:active {
-    opacity: 0.3;
-}
-
-.tooltip {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    margin-top: 1px;
-    margin-left: 3px;
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .tooltip-toggle {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 60px;
     margin: 0;
     padding: 0;
+    width: 26px;
+    height: 26px;
     border: none;
     background-color: transparent;
 }
 
 .tooltip-icon {
     display: block;
-    padding: 2px;
     color: #ffffff;
     background-color: #83B3D3;
     border-radius: 50%;
@@ -961,7 +961,7 @@ img {
 .tooltip-text::before {
     position:absolute;
     right: 6px;
-    bottom: 139px;
+    bottom: 138px;
     left: 0;
     width: 19px;
     height: 9px;
@@ -1214,8 +1214,8 @@ img {
 
 .range-input {
     width: 121px;
-    padding-top: 15px;
-    padding-bottom: 13px;
+    padding-top: 14px;
+    padding-bottom: 10px;
     padding-left: 20px;
     font: inherit;
     font-weight: 700;
@@ -1401,8 +1401,8 @@ img {
 
 .select-control {
     width: 290px;
-    padding: 12px 16px;
-    padding-right: 131px;
+    padding: 12px 15px;
+    padding-right: 120px;
     font: inherit;
     font-size: 18px;
     line-height: 21px;
