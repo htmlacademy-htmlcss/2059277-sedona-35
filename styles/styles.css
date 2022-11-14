@@ -940,7 +940,7 @@ img {
     z-index: 1;
     display: none;
     width: 224px;
-    padding: 19px 11px 20px 20px;
+    padding: 19px 15px 20px 20px;
     font-size: 15px;
     line-height: 20px;
     font-style: normal;
@@ -961,7 +961,7 @@ img {
 .tooltip-text::before {
     position:absolute;
     right: 6px;
-    bottom: 138px;
+    bottom: 139px;
     left: 0;
     width: 19px;
     height: 9px;
@@ -1203,7 +1203,7 @@ img {
     display: flex;
     width: 290px;
     justify-content: center;
-    margin-bottom: 43px;
+    margin-bottom: 45px;
 }
 
 .catalog-filter-label {
