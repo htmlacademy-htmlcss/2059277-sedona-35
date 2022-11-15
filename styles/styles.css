@@ -96,7 +96,38 @@ img {
     background-color: #615048;
 }
 
+.field {
+    margin: 0;
+    padding: 14px 20px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.field:hover {
+    background-color: #E6E6E6;
+}
+
+.field:focus-visible {
+    padding: 11px 17px;
+    background-color: #E6E6E6;
+    border: 3px solid #83B3D3;
+}
+
+.field::placeholder {
+    color: #000000;
+    opacity: 0.6;
+}
+
 .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
     flex-grow: 1;
@@ -269,7 +300,7 @@ img {
 
 .advantages-container-inner {
     flex-direction: column;
-    padding: 100px 85px;
+    padding: 100px 82px;
 }
 
 .advantages-title {
@@ -448,37 +479,9 @@ img {
     justify-content: center;
 }
 
-.field {
-    margin: 0;
-    padding: 14px 20px;
-    font: inherit;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
-    background-color: #F2F2F2;
-    border: none;
-    border-radius: 4px 0 0 4px;
-}
-
 .subscription-form .field {
     width: 412px;
     outline: none;
-}
-
-.field:hover {
-    background-color: #E6E6E6;
-}
-
-.field:focus-visible {
-    padding: 11px 17px;
-    background-color: #E6E6E6;
-    border: 3px solid #83B3D3;
-}
-
-.field::placeholder {
-    color: #000000;
-    opacity: 0.6;
 }
 
 .subscription-form .button {
@@ -526,7 +529,6 @@ img {
 
 .page-footer {
     display: flex;
-    margin: 0 auto;
     margin-bottom: 30px;
     padding: 0 70px;
     color: #000000;
