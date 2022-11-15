@@ -724,14 +724,18 @@ img {
 
 .search-form .field-group {
     position: relative;
-    margin: 0;
-    margin-bottom: 48px;
+}
+
+.search-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .field-group-calendar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 18px;
 }
 
 .field-group-calendar::before {
@@ -748,17 +752,15 @@ img {
 }
 
 .search-form-label {
-    align-items: center;
+    min-width: 120px;
+    margin-right: 18px;
+    padding: 12px 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
     color: #000000;
     background-color: #ffffff;
-}
-
-.search-form-label-adults {
-    margin-right: 45px;
 }
 
 .search-form-label-kids {
@@ -802,9 +804,7 @@ img {
 }
 
 .search-info-date {
-    position: absolute;
-    top: 51px;
-    left: 156px;
+    padding: 5px 20px;
     font-size: 16px;
     line-height: 21px;
 }
@@ -816,6 +816,7 @@ img {
 .field-group-number {
     display: flex;
     margin: 0;
+    margin-bottom: 48px;
     justify-content: space-between;
 }
 
