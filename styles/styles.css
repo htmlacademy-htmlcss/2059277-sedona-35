@@ -244,8 +244,8 @@ img {
     margin-bottom: 69px;
     padding-top: 51px;
     padding-bottom: 82px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #333333;
     background-image: url("../images/main-background-bottom.svg"), url("../images/main-background.jpg");
     background-position: bottom;
     background-size: 100% auto, cover;
@@ -443,7 +443,7 @@ img {
 
 .subscription-main {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #3F5E72;
     background-image: url("../images/subscription-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -744,6 +744,7 @@ img {
     right: 22px;
     width: 20px;
     height: 20px;
+    background-color: #F2F2F2;
     background-image: url("../images/calendar.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -974,7 +975,7 @@ img {
 .tooltip-text::before {
     position:absolute;
     right: 6px;
-    bottom: 139px;
+    top: -9px;
     left: 0;
     width: 19px;
     height: 9px;
@@ -1049,6 +1050,7 @@ img {
     width: 13px;
     height: 15px;
     padding: 3px 0;
+    background-color: #3F5E72;
     background-image: url("../images/icons/icon-home.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -1061,6 +1063,7 @@ img {
     display: block;
     width: 8px;
     height: 21px;
+    background-color: #3F5E72;
     background-image: url("../images/arrow-breadcrumbs.svg");
     background-repeat: no-repeat;
     content: "";
