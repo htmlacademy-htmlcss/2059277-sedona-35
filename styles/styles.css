@@ -1050,7 +1050,6 @@ img {
     width: 13px;
     height: 15px;
     padding: 3px 0;
-    background-color: #3F5E72;
     background-image: url("../images/icons/icon-home.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -1063,7 +1062,6 @@ img {
     display: block;
     width: 8px;
     height: 21px;
-    background-color: #3F5E72;
     background-image: url("../images/arrow-breadcrumbs.svg");
     background-repeat: no-repeat;
     content: "";
