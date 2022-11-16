@@ -151,6 +151,7 @@ img {
 
 .nav {
     display: flex;
+    align-items: flex-start;
     width: 1060px;
     margin-left: 238px;
 }
@@ -164,6 +165,7 @@ img {
 
 .nav-user {
     max-width: 320px;
+    margin-top: 3px;
     margin-left: auto;
     margin-right: 21px;
 }
@@ -242,11 +244,11 @@ img {
     margin-bottom: 69px;
     padding-top: 51px;
     padding-bottom: 82px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #333333;
     background-image: url("../images/main-background-bottom.svg"), url("../images/main-background.jpg");
     background-position: bottom;
-    background-size: 100% auto;
+    background-size: 100% auto, cover;
     background-repeat: no-repeat;
 }
 
@@ -441,7 +443,7 @@ img {
 
 .subscription-main {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #3F5E72;
     background-image: url("../images/subscription-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -560,6 +562,10 @@ img {
     outline: none;
 }
 
+.footer-social-link:focus .social-icon {
+    fill: #68A2CA;
+}
+
 .social-icon {
     position: absolute;
     top: 13px;
@@ -616,6 +622,10 @@ img {
 
 .logo-academy {
     outline: none;
+}
+
+.logo-academy:focus .academy-icon {
+    fill: #756157;
 }
 
 .academy-icon {
@@ -714,14 +724,18 @@ img {
 
 .search-form .field-group {
     position: relative;
-    margin: 0;
-    margin-bottom: 48px;
+}
+
+.search-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .field-group-calendar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 18px;
 }
 
 .field-group-calendar::before {
@@ -730,6 +744,7 @@ img {
     right: 22px;
     width: 20px;
     height: 20px;
+    background-color: #F2F2F2;
     background-image: url("../images/calendar.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -738,17 +753,15 @@ img {
 }
 
 .search-form-label {
-    align-items: center;
+    min-width: 120px;
+    margin-right: 18px;
+    padding: 12px 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
     color: #000000;
     background-color: #ffffff;
-}
-
-.search-form-label-adults {
-    margin-right: 45px;
 }
 
 .search-form-label-kids {
@@ -792,9 +805,7 @@ img {
 }
 
 .search-info-date {
-    position: absolute;
-    top: 51px;
-    left: 156px;
+    padding: 5px 20px;
     font-size: 16px;
     line-height: 21px;
 }
@@ -806,6 +817,7 @@ img {
 .field-group-number {
     display: flex;
     margin: 0;
+    margin-bottom: 48px;
     justify-content: space-between;
 }
 
@@ -963,7 +975,7 @@ img {
 .tooltip-text::before {
     position:absolute;
     right: 6px;
-    bottom: 139px;
+    top: -9px;
     left: 0;
     width: 19px;
     height: 9px;
@@ -1003,9 +1015,9 @@ img {
     margin-bottom: 50px;
     padding: 35px 70px 57px;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #3F5E72;
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -1038,6 +1050,7 @@ img {
     width: 13px;
     height: 15px;
     padding: 3px 0;
+    background-color: #3F5E72;
     background-image: url("../images/icons/icon-home.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -1050,6 +1063,7 @@ img {
     display: block;
     width: 8px;
     height: 21px;
+    background-color: #3F5E72;
     background-image: url("../images/arrow-breadcrumbs.svg");
     background-repeat: no-repeat;
     content: "";
@@ -1073,7 +1087,7 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus-visible {
     color: #FFFFFF;
 }
 
@@ -1147,18 +1161,18 @@ img {
     border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control-mark {
     background-color: #FFFFFF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.control:focus .control-mark {
+.control-input:focus-visible + .control-mark {
     background-color: #FFFFFF;
     outline: 3px solid #83B3D3;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.control:active .control-mark {
+.control-input:active + .control-mark {
     background-color: #FFFFFF;
     outline: 2px solid #83B3D3;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
@@ -1356,6 +1370,7 @@ img {
 .catalog-filter-form .button-reset:focus {
     background-color: transparent;
     border: 3px solid #83B3D3;
+    padding: 5px 51px;
 }
 
 .catalog-filter-form .button-reset:active {
@@ -1523,7 +1538,11 @@ img {
 }
 
 .hotels-card .button {
-    padding: 8px 18px;
+    display: block;
+    min-width: 140px;
+    min-height: 36px;
+    padding: 9px 18px;
+    box-sizing: border-box;
 }
 
 .hotels-card .button-current {

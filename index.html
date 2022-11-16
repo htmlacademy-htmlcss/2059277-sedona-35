@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="page-header-logo" href="index.html">
+        <a class="page-header-logo" href="#">
           <img src="images/header-logo.svg" width="140" height="70" alt="Логотип сайта «Седона».">
         </a>
 
@@ -198,13 +198,17 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group field-group-calendar">
             <label class="search-form-label" for="date-arrival">Дата заезда:</label>
-            <input class="search-form-field" type="text" id="date-arrival" placeholder="Укажите дату" value="27 апреля 2020" name="date-arrival" required>
-            <span class="search-info-date search-error-date">Мы не можем отправить вас в прошлое.</span>
+            <div class="search-form-wrapper">
+              <input class="search-form-field" type="text" id="date-arrival" placeholder="Укажите дату" value="27 апреля 2020" name="date-arrival" required>
+              <span class="search-info-date search-error-date">Мы не можем отправить вас в прошлое.</span>
+            </div>
           </div>
           <div class="field-group field-group-calendar">
             <label class="search-form-label search-form-label-departure" for="date-departure">Дата выезда:</label>
-            <input class="search-form-field search-form-field-departure" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату" value="1 сентября 2023" required>
-            <span class="search-info-date">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="search-form-wrapper">
+              <input class="search-form-field search-form-field-departure" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <span class="search-info-date">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
           </div>
           <div class="field-group-number">
             <div class="field-group">
