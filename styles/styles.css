@@ -1023,7 +1023,7 @@ img {
 
 .inner-header-title {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
@@ -1032,7 +1032,7 @@ img {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     align-items: center;
     color: #ffffff;
 }
@@ -1040,19 +1040,10 @@ img {
 .breadcrumbs-item {
     position: relative;
     margin-right: 28px;
+    padding: 3px 0;
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
-}
-
-.breadcrumbs-icon-home {
-    display: block;
-    width: 13px;
-    height: 15px;
-    padding: 3px 0;
-    background-image: url("../images/icons/icon-home.svg");
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 .breadcrumbs-item::after {
@@ -1078,7 +1069,6 @@ img {
 .breadcrumbs-link {
     color: #ffffff;
     text-decoration: none;
-    outline: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1086,11 +1076,30 @@ img {
 }
 
 .breadcrumbs-link:focus-visible {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .breadcrumbs-link:active {
     color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-icon-home {
+    display: block;
+    width: 13px;
+    height: 15px;
+    fill: #ffffff;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon-home {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus-visible .breadcrumbs-icon-home {
+    fill: #ffffff;
+}
+
+.breadcrumbs-link:active .breadcrumbs-icon-home {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-form {
